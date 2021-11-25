@@ -1,0 +1,64 @@
+@import "media-queries";
+
+.hero {
+    height: 550px;
+    display: flex;
+    background-image: url(../image/dark-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+        color: white;
+
+        @include medium {
+            text-align: center;
+            padding-left: 0;
+        }
+
+        h2 {
+            font-size: 55px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: 100;
+            color: rgb(221, 220, 220);
+            margin-bottom: 15px;
+        }
+
+        a {
+            width: 150px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(6, 185, 60);
+            text-align: center;
+            padding: 15px 15px;
+            border-radius: 10px;
+            transition: all .3s ease;
+
+            @include medium {
+                margin: 5px auto;
+            }
+
+            &:hover h4 {
+                transform: scale(1.1);
+                letter-spacing: 2px;
+            }
+        }
+
+        h4 {
+            transition: all .3s ease;
+        }
+    }
+
+    
+    
+}
